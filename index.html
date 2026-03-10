@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Issue Tracker</title>
+
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Typing Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="bg-[#F8FAFC] flex justify-center text-center">
+
+    <div class="w-2.5/11 mx-auto mt-12 mb-12 bg-[#FFFFFF] shadow-sm">
+
+        <!-- Login page header -->
+        <header class="pt-9 space-y-2">
+            <div class="flex justify-center">
+                <img class="" src="./assets/github-logo.png" alt="">
+            </div>
+            <h2 class="font-semibold text-2xl text-[#1F2937]">GitHub Issues Tracker</h2>
+            <p class="text-[#64748B]">Sign in to manage your issues</p>
+        </header>
+
+        <!-- input boxes -->
+        <section class="login-form text-left">
+            <fieldset class="fieldset rounded-box w-xs p-4">
+
+                <label class="label text-neutral font-bold">Username</label>
+                <input id="login-username" type="text" value="admin" class="input" placeholder="Enter Username" />
+                <p class="default-text text-blue-700">Default: admin</p>
+
+                <label class="label text-neutral font-bold">Password</label>
+                <input id="login-password" type="text" value="admin123" class="input"
+                    placeholder="Enter Password" />
+                <p class="default-text text-blue-700">Default: admin123</p>
+
+                <button id="login-btn" class="btn btn-primary mt-4">Login</button>
+            </fieldset>
+        </section>
+        <div class="w-11/12 flex justify-self-center items-center">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="m-2 text-gray-600">OR</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+
+        <!-- Login page Footer -->
+        <footer class="">
+            <div class="">
+                <p class="text-[#64748B] text-[13px] mb-6">Demo Credentials:</p>
+            </div>
+            <div class=" mb-6">
+                <p class="text-sm text-[#1F2937]"><span class="font-semibold">Username:</span> admin</p>
+                <p class="text-sm text-[#1F2937]"><span class="font-semibold">Password:</span> admin123</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Script:JS files -->
+    <script src="./script/login.js"></script>
+</body>
+
+</html>
