@@ -30,7 +30,7 @@
 
 <body class="bg-[#F8FAFC] flex justify-center text-center">
 
-    <div class="w-2.5/11 mx-auto mt-12 mb-12 bg-[#FFFFFF] shadow-sm">
+    <div class="w-2.5/11 mx-auto my-5 md:my-12 bg-[#FFFFFF] shadow-sm">
 
         <!-- Login page header -->
         <header class="pt-9 space-y-2">
@@ -42,16 +42,16 @@
         </header>
 
         <!-- input boxes -->
-        <section class="login-form text-left">
+        <section class="login-form flex items-center justify-self-center text-center ">
             <fieldset class="fieldset rounded-box w-xs p-4">
 
                 <label class="label text-neutral font-bold">Username</label>
-                <input id="login-username" type="text" value="admin" class="input" placeholder="Enter Username" />
-                <p class="default-text text-blue-700">Default: admin</p>
+                <input id="login-username" type="text" class="input" placeholder="Enter Username" />
+                <p class="default-text text-blue-700 text-left">Default: admin</p>
 
                 <label class="label text-neutral font-bold">Password</label>
-                <input id="login-password" type="text" value="admin123" class="input" placeholder="Enter Password" />
-                <p class="default-text text-blue-700">Default: admin123</p>
+                <input id="login-password" type="text" class="input" placeholder="Enter Password" />
+                <p class="default-text text-blue-700 text-left">Default: admin123</p>
 
                 <button id="login-btn" class="btn btn-primary mt-4">Login</button>
             </fieldset>
